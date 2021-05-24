@@ -36,7 +36,7 @@ This library provides big integer math functions.
 #else
     #define MP_API   WOLFSSL_LOCAL
 #endif
-
+/*
 #ifndef MIN
    #define MIN(x,y) ((x)<(y)?(x):(y))
 #endif
@@ -44,7 +44,7 @@ This library provides big integer math functions.
 #ifndef MAX
    #define MAX(x,y) ((x)>(y)?(x):(y))
 #endif
-
+*/
 /* timing resistance array */
 #if !defined(WC_NO_CACHE_RESISTANT) && \
     ((defined(HAVE_ECC) && defined(ECC_TIMING_RESISTANT)) || \

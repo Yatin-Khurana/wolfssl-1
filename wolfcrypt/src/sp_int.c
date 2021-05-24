@@ -12850,8 +12850,8 @@ int sp_rand_prime(sp_int* r, int len, WC_RNG* rng, void* heap)
      * it is proven composite. */
     while (err == MP_OKAY && isPrime == MP_NO) {
 #ifdef SHOW_GEN
-        printf(".");
-        fflush(stdout);
+        //printf(".");
+        //fflush(stdout);
 #endif /* SHOW_GEN */
         /* generate value */
         err = wc_RNG_GenerateBlock(rng, (byte*)r->dp, len);

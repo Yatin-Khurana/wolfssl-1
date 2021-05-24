@@ -5169,8 +5169,8 @@ int fp_randprime(fp_int* N, int len, WC_RNG* rng, void* heap)
 
     do {
 #ifdef SHOW_GEN
-        printf(".");
-        fflush(stdout);
+        //printf(".");
+        //fflush(stdout);
 #endif
         /* generate value */
         err = wc_RNG_GenerateBlock(rng, buf, len);
